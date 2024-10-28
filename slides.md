@@ -55,6 +55,7 @@ image: ./public/image/joshua-tree.png
 
 ---
 layout: center
+transition: slide-left
 ---
 <h1 class="fzdbsjw">四大基本原则</h1>
 
@@ -62,6 +63,7 @@ layout: center
 
 ---
 layout: image-left
+transition: slide-left
 image: ./public/image/contrast.png
 ---
 
@@ -76,6 +78,7 @@ image: ./public/image/contrast.png
 ---
 layout: image-left
 image: ./public/image/repetition.png
+transition: slide-left
 ---
 
 <h1 class="fzdbsjw">重复（<span class="fzlthjw">Repetition</span>）</h1>
@@ -87,6 +90,7 @@ image: ./public/image/repetition.png
 
 ---
 layout: image-left
+transition: slide-left
 image: ./public/image/alignment.png
 ---
 
