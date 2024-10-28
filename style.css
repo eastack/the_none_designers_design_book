@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'fzdbsjw';
+	src: url('/font/fzdbsjw-webfont.woff');
+}
+
+@font-face {
+	font-family: 'fzlthjw';
+	src: url('/font/fzlthjw-webfont.woff');
+}
+
+.fzdbsjw {
+	font-family: fzdbsjw;
+}
+
+.fzlthjw {
+	font-family: fzlthjw;
+}
