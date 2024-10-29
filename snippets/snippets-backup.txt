@@ -1,0 +1,50 @@
+---
+class: px-20
+transition: slide-left
+---
+
+<h1 class="fzdbsjw">对齐原则</h1>
+
+<div class="grid grid-cols-[49.3%_1fr] grid-gap2 px-10">
+
+<div class="flex flex-col items-center flex-gap2">
+  <div>
+    <img v-click="1" border="rounded" src="./public/image/paper_card_1.png" alt="">
+  </div>
+  <div >
+    <img v-click="2" border="rounded" src="./public/image/paper_card_1.5.png" alt="">
+  </div>
+</div>
+
+<div class="flex flex-col items-center flex-gap2 fzlthjw">
+  <div>
+    <img v-click="3" border="rounded" src="./public/image/paper_card_2.png" alt="">
+  </div>
+  <div v-click="4" class="flex flex-col items-start flex-gap2 h-full w-full justify-center">
+    <li>将信息按照亲密性原则进行分组。</li>
+    <li>统一使用左对齐。</li>
+    <li>将字重适当加重。</li>
+    <li>左对齐比居中对齐边界更硬，对齐更明确</li>  </div>
+</div>
+
+</div>
+
+
+
+---
+class: px-50
+transition: slide-left
+---
+
+<h1 class="fzdbsjw">对齐原则1</h1>
+
+<div class="flex flex-row items-center justify-center flex-gap1 h-full pb-20">
+  <div>
+    <img v-click="1" src="./public/image/one_night_1.png">
+  </div>
+  <div>
+    <img v-click="2" src="./public/image/one_night_2.png">
+  </div>
+</div>
+
+
