@@ -57,7 +57,132 @@ image: ./public/image/joshua-tree.png
 layout: center
 transition: slide-left
 ---
+
 <h1 class="fzdbsjw">四大基本原则</h1>
+
+<li class="fzdbsjw">对比（<span class="fzlthjw">Contrast</span>）</li>
+<li class="fzdbsjw">重复（<span class="fzlthjw">Repetition</span>）</li>
+<li class="fzdbsjw">对齐（<span class="fzlthjw">Alignment</span>）</li>
+<li class="fzdbsjw">亲密性（<span class="fzlthjw">Proximity</span>）</li>
+
+
+
+---
+layout: image-left
+image: ./public/image/proximity.png
+---
+<h1 class="fzdbsjw">亲密性（<span class="fzlthjw">Proximity</span>）</h1>
+
+<div class="fzlthjw text-xl">彼此相关的项应当靠近，归组在一起。如果多个项相互之间存在很近的亲密性，它们就会成为一个视觉单元，而不是多个孤立的元素。这有助于组织信息，减少混乱，为读者提供清晰的结构。
+</div>
+
+
+
+---
+class: px-20
+transition: slide-left
+---
+
+<h1 class="fzdbsjw">亲密性原则</h1>
+
+<div class="grid grid-cols-2 grid-gap2 px-10">
+
+<div class="flex flex-col items-center flex-gap2">
+  <div>
+    <img v-click="1" border="rounded" src="./public/image/card_1.png" alt="">
+  </div>
+  <div >
+    <img v-click="2" border="rounded" src="./public/image/card_2.png" alt="">
+  </div>
+</div>
+
+
+<div class="flex flex-col items-center flex-gap2 fzlthjw">
+  <div>
+    <img v-click="3" border="rounded" src="./public/image/card_3.png" alt="">
+  </div>
+  <div v-click="4" class="flex flex-col items-start flex-gap2 h-full w-full justify-center">
+    <li>把相关的元素分为一组。</li>
+    <li>统一使用了居中对齐。</li>
+    <li>对姓名的字体适当加粗。</li>
+  </div>
+</div>
+
+</div>
+
+
+---
+class: px-40
+transition: slide-left
+---
+
+<h1 class="fzdbsjw">亲密性原则</h1>
+
+<div class="grid grid-cols-[1fr] grid-gap2">
+    <div class="flex flex-col items-center flex-gap8">
+      <div>
+        <img v-click="1" border="rounded" src="./public/image/areas_1.png" alt="">
+      </div>
+      <div>
+        <img v-click="2" border="rounded" src="./public/image/areas_2.png" alt="">
+      </div>
+    </div>
+</div>
+
+
+---
+class: px-20
+transition: slide-left
+---
+
+<h1 class="fzdbsjw">亲密性原则</h1>
+
+<div class="grid grid-cols-[47%_1fr] grid-gap2 px-10">
+
+<div class="flex flex-col items-center flex-gap2">
+  <div>
+    <img v-click="1" border="rounded" src="./public/image/purple_card_1.png" alt="">
+  </div>
+  <div >
+    <img v-click="2" border="rounded" src="./public/image/purple_card_2.png" alt="">
+  </div>
+</div>
+
+
+<div>
+  <div v-click="3" class="flex flex-col items-start flex-gap2 h-full w-full justify-center">
+    <li>标题更大。</li>
+    <li>其他部分的字更小。</li>
+    <li>三种服务列在独立的三行。</li>
+    <li>把相关元素集中在一起。</li>
+    <li>把邮箱和网址的字母大写，让它们更易读。</li>
+    <li>去掉多余的心形。</li>
+    <li>去掉 available 这个词。</li>
+    <li>把心形变浅，不要让它和文字争夺注意力。</li>
+    <li>把心形放大，让它和文本重叠融为一体。</li>
+  </div>
+</div>
+
+</div>
+
+
+---
+class: px-50
+transition: slide-left
+---
+
+<h1 class="fzdbsjw">亲密性原则</h1>
+
+<div class="grid grid-cols-[1fr]">
+    <div class="flex flex-col items-center flex-gap8">
+      <div>
+        <img v-click="1" border="rounded" src="./public/image/moon_1.png" alt="">
+      </div>
+      <div>
+        <img v-click="2" border="rounded" src="./public/image/moon_2.png" alt="">
+      </div>
+    </div>
+</div>
 
 
 
@@ -102,54 +227,138 @@ image: ./public/image/alignment.png
 
 
 ---
-layout: image-left
-image: ./public/image/proximity.png
----
-<h1 class="fzdbsjw">亲密性（<span class="fzlthjw">Proximity</span>）</h1>
-
-<div class="fzlthjw text-xl">彼此相关的项应当靠近，归组在一起。如果多个项相互之间存在很近的亲密性，它们就会成为一个视觉单元，而不是多个孤立的元素。这有助于组织信息，减少混乱，为读者提供清晰的结构。
-</div>
-
-
-
----
 class: px-20
+transition: slide-left
 ---
 
-<h1 class="fzdbsjw">亲密性原则</h1>
+<h1 class="fzdbsjw">对齐原则</h1>
 
-<div class="grid grid-cols-[45%_1fr] grid-gap2">
+<div class="grid grid-cols-[49.3%_1fr] grid-gap2 px-10">
 
 <div class="flex flex-col items-center flex-gap2">
-  <div v-click="[1, 2]">
-    <img border="rounded" src="./public/image/card_1.png" alt="">
+  <div>
+    <img v-click="1" border="rounded" src="./public/image/paper_card_1.png" alt="">
   </div>
   <div >
-    <img v-click="2" border="rounded" src="./public/image/card_3.png" alt="">
+    <img v-click="2" border="rounded" src="./public/image/paper_card_1.5.png" alt="">
   </div>
 </div>
 
-<span v-after>
-<v-click><li>从哪里开始读名片？</li></v-click>
-<v-click><li>接下来看什么？</li></v-click>
-<v-click><li>什么时候结束？</li></v-click>
-</span>
+<div class="flex flex-col items-center flex-gap2 fzlthjw">
+  <div>
+    <img v-click="3" border="rounded" src="./public/image/paper_card_2.png" alt="">
+  </div>
+  <div v-click="4" class="flex flex-col items-start flex-gap2 h-full w-full justify-center">
+    <li>将信息按照亲密性原则进行分组。</li>
+    <li>统一使用左对齐。</li>
+    <li>将字重适当加重。</li>
+    <li>左对齐比居中对齐边界更硬，对齐更明确</li>  </div>
+</div>
 
+</div>
+
+
+
+---
+class: px-50
+transition: slide-left
+---
+
+<h1 class="fzdbsjw">对齐原则</h1>
+
+<div class="flex flex-row items-center justify-center flex-gap1 h-full pb-20">
+  <div>
+    <img v-click="1" border="rounded" src="./public/image/eye_1.png">
+  </div>
+  <div>
+    <img v-click="2" border="rounded" src="./public/image/eye_2.png">
+  </div>
+  <div>
+    <img v-click="3" border="rounded" src="./public/image/eye_3.png">
+  </div>
 </div>
 
 
 ---
 class: px-20
+transition: slide-left
 ---
 
-<div class="grid grid-cols-[1fr] grid-gap2">
-    <div class="flex flex-col items-center flex-gap8">
-      <div>
-        <img v-click="[3]" v-click.hide="[2,3]" border="rounded" src="./public/image/areas_1.png" alt="">
-      </div>
-      <div>
-        <img v-click="1" border="rounded" src="./public/image/areas_2.png" alt="">
-      </div>
-    </div>
+<h1 class="fzdbsjw">对齐原则</h1>
+
+<div class="grid grid-cols-2 grid-gap5 px-60">
+
+<div class="flex flex-col items-center flex-gap5 h-full">
+  <div>
+    <img v-click="1" border="rounded" src="./public/image/pie_day_1.png" alt="">
+  </div>
+  <div >
+    <img v-click="2" border="rounded" src="./public/image/pie_day_2.png" alt="">
+  </div>
 </div>
 
+
+<div class="flex flex-col items-center flex-gap5 fzlthjw">
+  <div>
+    <img v-click="3" border="rounded" src="./public/image/pie_day_3.png" alt="">
+  </div>
+  <div>
+    <img v-click="4" border="rounded" src="./public/image/pie_day_4.png" alt="">
+  </div>
+</div>
+
+</div>
+
+<!--
+2. 不同行长让居中布局看起来确实很居中。
+行之间的间隔在引用文字中是一致的。
+字体不那么又大又长。
+
+字体很可爱。
+
+3. 有趣的字体
+有趣的图画。
+
+居中对齐是很明确的居中。
+
+4. 粗壮有力
+文字后面有黑色带，文字反转出来。
+
+微妙地利用合适的装饰。
+-->
+
+
+
+---
+class: px-50
+transition: slide-left
+---
+
+<h1 class="fzdbsjw">对齐原则</h1>
+
+<div class="flex flex-row items-center justify-center flex-gap1 h-full pb-20">
+  <div>
+    <img v-click="1" src="./public/image/one_night_1.png">
+  </div>
+  <div>
+    <img v-click="2" src="./public/image/one_night_2.png">
+  </div>
+</div>
+
+
+
+---
+class: px-50
+transition: slide-left
+---
+
+<h1 class="fzdbsjw">对齐原则</h1>
+
+<div class="flex flex-row items-center justify-center flex-gap1 h-full pb-20">
+  <div>
+    <img v-click="1" src="./public/image/country_1.png">
+  </div>
+  <div>
+    <img v-click="2" src="./public/image/country_2.png">
+  </div>
+</div>
