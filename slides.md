@@ -10,8 +10,28 @@ transition: fade-out
 <div class="fzlthjw text-xl opacity-75">Robin Patricia Williams</div>
 
 <!--
+ https://cover.sli.dev
 -->
 
+
+
+---
+transition: fade-out
+---
+
+<div class="grid grid-cols-[40.7%_1fr] grid-gap5 px-10">
+  <div>
+    <img class="shadow-md" src="./public/image/book_cover.jpg">
+  </div>
+  <div class="flex mt-10 flex-row flex-gap8">
+  <div>
+      <img src="./public/image/robin.gif" class="w-192">
+  </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;罗宾·帕特里夏·威廉姆斯（Robin Patricia Williams，1953 年 10 月 9 日出生）世界著名的设计师、技术专家和畅销书作家。通过写书和授课，她已经影响了整整一代数字设计师。同时，作为 Adobe 和 Mac 技术社区内的偶像级专家，她拥有大批的拥戴者。
+
+  </div>
+  
+</div>
 
 
 
@@ -60,10 +80,10 @@ transition: slide-left
 
 <h1 class="fzdbsjw">四大基本原则</h1>
 
-<li class="fzdbsjw">对比（<span class="fzlthjw">Contrast</span>）</li>
-<li class="fzdbsjw">重复（<span class="fzlthjw">Repetition</span>）</li>
-<li class="fzdbsjw">对齐（<span class="fzlthjw">Alignment</span>）</li>
 <li class="fzdbsjw">亲密性（<span class="fzlthjw">Proximity</span>）</li>
+<li class="fzdbsjw">对齐（<span class="fzlthjw">Alignment</span>）</li>
+<li class="fzdbsjw">重复（<span class="fzlthjw">Repetition</span>）</li>
+<li class="fzdbsjw">对比（<span class="fzlthjw">Contrast</span>）</li>
 
 
 
@@ -109,6 +129,21 @@ transition: slide-left
 </div>
 
 </div>
+
+<!--
+你的眼睛是不是停过5 次？当然，这张小小的名片上放置了5 项孤立的
+内容。
+你是从哪里开始的？可能是从中间，因为中间的短句字体最粗。
+接下来看什么？是不是按从左向右的顺序读？（因为这是英语。）
+如果已经读到名片的最后（即右下角），你的目光又会移向哪里？
+你是不是还会全盘再巡视一番，确保自己没有遗漏任何角落？
+
+现在有两个元素都是粗体，你又该从哪里开始呢？从左上角吗？还是从中间开始？
+读完这两项之后，接下来看什么？也许你会在这些粗体词之间看来看去，
+紧张兮兮地想找出角落里还隐藏着哪些词尚未看到。
+你知道什么时候才算完吗？
+你的朋友是不是也像你这样？他们会不会用不同的方式读这个名片？
+-->
 
 
 ---
@@ -184,12 +219,22 @@ transition: slide-left
     </div>
 </div>
 
+<!--
+标题更大了。
+边角没有那么圆了。
+文本对齐了。
+缩写词拼出来了。
+项目符号取代了逗号。
+文本变灰，可以更少地干扰视觉效果。
+月亮从上端逃出。
+-->
+
 
 
 
 ---
 layout: image-left
-transition: slide-left
+transition: fade-out
 image: ./public/image/alignment.png
 ---
 
@@ -197,6 +242,56 @@ image: ./public/image/alignment.png
 
 <div class="fzlthjw text-xl">任何东西都不能在页面上随意安放。每个元素都应当与页面上的另一个元素有某种视觉联系。这样能建立一种清晰、精巧而且清爽的外观。
 </div>
+
+
+
+---
+class: px-50
+transition: slide-left
+---
+
+<h1 class="fzdbsjw">对齐原则</h1>
+
+<div class="flex flex-col items-center justify-center flex-gap1 h-full px-30 pb-20">
+    <img v-click="1" src="./public/image/ppt_1.png">
+    <img v-click="2" src="./public/image/ppt_2.png">
+</div>
+
+<!--
+https://www.foundertype.com/index.php/News/newsdetails/id/76.html
+-->
+
+
+
+---
+class: px-20
+transition: slide-left
+---
+
+<h1 class="fzdbsjw">对齐原则</h1>
+
+<div class="grid grid-cols-[45%_1fr] grid-gap2 px-10">
+
+<div class="flex flex-col items-center flex-gap2">
+  <div>
+    <img v-click="1" src="./public/image/dog_card_1.png">
+  </div>
+  <div >
+    <img v-click="2" src="./public/image/dog_card_2.png">
+  </div>
+</div>
+<div>
+  <div v-click="3" class="flex flex-col items-start flex-gap2 h-full w-full justify-center">
+    <li>标题被放大了一些，这样它就和照片对齐了。</li>
+    <li>副标题被归入更亲的亲密性中。</li>
+    <li>保持了底部明显的右对齐，为网址单独设立了一行，这样做让信息更清晰。</li>
+    <li>网址中加入了大写字母，所以读起来更容易。</li>
+    <li>下半页的第二个 Logo 被削减了一些，所以它不会和上面那个争夺注意力。</li>
+  </div>
+</div>
+
+</div>
+
 
 
 
@@ -218,6 +313,20 @@ transition: slide-left
     <img v-click="3" border="rounded" src="./public/image/eye_3.png">
   </div>
 </div>
+
+<!--
+这不算糟糕，但这种居中布局有点
+乏味，而且边框束缚了整个空间，
+给人一种受限制的感觉。
+
+这种左对齐使页面更为精美。只是
+在左边留有虚线，这就使页面变得
+开放，而且突出了对齐。
+
+文本位于左侧，采用了右对齐。为
+了与布局的右对齐格式保持一致，
+输入的字体只能是严格的左对齐。
+-->
 
 
 ---
@@ -251,71 +360,32 @@ transition: slide-left
 </div>
 
 <!--
+居中。感觉很稳固，甚至感
+觉非常乏味，就算字体可爱
+也没用。
+
+如果想让文本居中，至少让
+它明显一点！
+
+试试看，包含居中文本的块
+不要居中。
+
+试试看，包含居中文本的块
+不要居中。
+
 2. 不同行长让居中布局看起来确实很居中。
 行之间的间隔在引用文字中是一致的。
 字体不那么又大又长。
-
 字体很可爱。
 
 3. 有趣的字体
 有趣的图画。
-
 居中对齐是很明确的居中。
 
 4. 粗壮有力
 文字后面有黑色带，文字反转出来。
-
 微妙地利用合适的装饰。
 -->
-
-
-
----
-class: px-50
-transition: slide-left
----
-
-<h1 class="fzdbsjw">对齐原则</h1>
-
-<div class="flex flex-col items-center justify-center flex-gap1 h-full px-30 pb-20">
-    <img v-click="1" src="./public/image/ppt_1.png">
-    <img v-click="2" src="./public/image/ppt_2.png">
-</div>
-
-<!--
-https://www.foundertype.com/index.php/News/newsdetails/id/76.html
--->
-
-
----
-class: px-20
-transition: slide-left
----
-
-<h1 class="fzdbsjw">亲密性原则</h1>
-
-<div class="grid grid-cols-[45%_1fr] grid-gap2 px-10">
-
-<div class="flex flex-col items-center flex-gap2">
-  <div>
-    <img v-click="1" src="./public/image/dog_card_1.png">
-  </div>
-  <div >
-    <img v-click="2" src="./public/image/dog_card_2.png">
-  </div>
-</div>
-<div>
-  <div v-click="3" class="flex flex-col items-start flex-gap2 h-full w-full justify-center">
-    <li>标题被放大了一些，这样它就和照片对齐了。</li>
-    <li>副标题被归入更亲的亲密性中。</li>
-    <li>保持了底部明显的右对齐，为网址单独设立了一行，这样做让信息更清晰。</li>
-    <li>网址中加入了大写字母，所以读起来更容易。</li>
-    <li>下半页的第二个logo 被削减了一些，所以它不会和上面那个争夺注意力。</li>
-  </div>
-</div>
-
-</div>
-
 
 
 
@@ -323,7 +393,7 @@ transition: slide-left
 ---
 layout: image-left
 image: ./public/image/repetition.png
-transition: slide-left
+transition: fade-out
 ---
 
 <h1 class="fzdbsjw">重复（<span class="fzlthjw">Repetition</span>）</h1>
@@ -393,16 +463,18 @@ transition: slide-left
 
 <h1 class="fzdbsjw">重复原则</h1>
 
-<div class="grid grid-cols-[40.7%_1fr] grid-gap5 px-10">
+<div class="grid grid-cols-[1fr_40.7%] grid-gap5 px-10">
   <div>
-    <img v-click="1" border="rounded" src="./public/image/light_orange_card.png">
+    <img v-click="1" border="rounded" src="./public/image/light_green_card.png">
   </div>
   <div>
-    <img v-click="2" border="rounded" src="./public/image/light_green_card.png">
+    <img v-click="2" border="rounded" src="./public/image/light_orange_card.png">
   </div>
 </div>
 
 <!--
+有时重复的项并不一定完全相同，而只是存在明确关联的紧密相关的对象。
+
 workshop 名称使用的标题字体。
 副标题和页脚的衬线体。
 
@@ -442,11 +514,17 @@ transition: slide-left
   <div v-click="4" class="flex flex-col items-start flex-gap2 h-full w-full justify-center">
     <li>重复使用相同的字体。</li>
     <li>没有使用居中对齐。</li>
-    <li>运用了对比性原则。</li>
+    <li>运用了对比原则。</li>
   </div>
 </div>
 
 </div>
+
+<!--
+这个很典型：Times  New  Roman
+字体，居中对齐，打字机引号。
+确实有人把信息按照逻辑分组了，但是你可以看出居中对齐很弱，有种把角落填满的倾向。
+-->
 
 
 
@@ -488,7 +566,7 @@ transition: slide-left
 
 ---
 layout: image-left
-transition: slide-left
+transition: fade-out
 image: ./public/image/contrast.png
 ---
 
@@ -541,31 +619,35 @@ transition: slide-left
 
 <h1 class="fzdbsjw">对比原则</h1>
 
-<div class="grid grid-cols-[25%_1fr] grid-gap2 px-10">
-
-<div class="flex flex-col items-center flex-gap2">
+<div class="grid grid-cols-2 grid-gap2 px-20">
   <div>
-    <img v-click="1" src="./public/image/pie_1.png" alt="">
+    <img v-click="1" class="shadow-md" src="./public/image/resume_1.png">
   </div>
   <div >
-    <img v-click="2" src="./public/image/pie_2.png" alt="">
-  </div>
-</div>
-<div>
-  <div v-click="3" class="flex flex-col items-start flex-gap2 h-full w-full justify-center">
-    <li>边框被改得更细（半磅）。</li>
-    <li>把全大写变成大小混写。</li>
-    <li>删掉了诸如telephone（电话）、zip code（邮编）、area code（区号）（因为这是本地报纸上登的本地广告）这样的不必要信息，腾出了更大的空间。</li>
-    <li>放大派并且让它飘起来（可以用Photoshop 把背景变得透明）。</li>
-    <li>调整了派的种类之后，它们更好地配合了空间。</li>
-    <li>大多数文字靠左对齐了；一些元素靠右对齐。</li>
-    <li>派店的口号重复了店名的字体。</li>
-    <li>派店的口号被设置成曲线形。</li>
-    <li>把a pie gallery（派的美术馆）挪到了标题位置，因为店里确实有派艺展览。</li>
+    <img v-click="2" class="shadow-md" src="./public/image/resume_2.png">
   </div>
 </div>
 
-</div>
+<!--
+对比对于信息的组织至关重要，读者一眼看到文档就能立即理解文档的内容。
+
+职位不清晰；职位和正文混杂在一起。段与段之间不清晰。
+页面上存在两种对齐方式：居中和左对齐。
+不同成就之间的间距和不同段之间的间距相同。
+布局不一致—日期有时在左边，有时在右边。记住，一致性才
+会产生重复性。
+
+只保留一种对齐方式：左对齐。在上面可以看到，如果只使用一
+种对齐，并不是说所有元素都要沿着同一个边界对齐，这只是
+说，所有一切都要采用同样的对齐方式。上面的左对齐文本很明
+确，而且互相促进（对齐和重复）。
+明显的标题，这样就能立即知道这个文档是什么，有哪些要点
+（对比）。
+段之间的间隔比各段内文本行之间的间隔大（空间关系对比；亲
+密性）。
+学位和职位都用粗体（标题字体的重复），这种强烈对比能使你
+很快抓住要点。
+-->
 
 
 
@@ -609,4 +691,26 @@ transition: slide-left
     <img v-click="2" border="rounded" src="./public/image/yellow_2.png">
   </div>
 </div>
+
+<!--
+行太长了，读者自己就读不下去了。如果像这样有很多内容，就
+像前面和后面那两幅图那样采用多列。
+将关键短语设为粗体，视觉上的对比可以吸引读者的目光。
+也许以一段介绍性的文字开头，读者会对传单的目的有一个大致
+的了解。很少有人愿意读一块一块的信息，所以有必要通过一个
+介绍性路径来引导读者的目光。
+
+不要害怕让一些项很小，这样不仅可以与更大的项形成对比，还能留出更多的空
+白！一旦读者把握住重点，只要他们感兴趣，自然会去读这些较小的文字。如果他
+们不感兴趣，不论你把这些文字设置得多大他们也不会去读。
+-->
+
+
+---
+layout: image
+image: https://cover.sli.dev
+transition: fade-out
+---
+
+<div class="fzdbsjw text-6xl flex flex-row items-center justify-center w-full h-full" >谢谢观看</div>
 
